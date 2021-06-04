@@ -1,0 +1,131 @@
+/**************************************** Üldkujundus */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: auto; /*lisab keskele */
+    background-color: #fff;
+}
+
+body{
+    background-color: #eeeeee;
+}
+
+
+/***************************************** Päis */
+.header{
+    background-color: #333;
+    color: #7e5c88;
+    padding: 10px;
+    line-height: 70px;
+    display: block;
+    float: left;
+}
+
+.header h1{
+
+    font-weight: 400;  
+
+}
+
+/*************************************** Menüü */
+.menu{
+    background-color: #333;
+    padding: 15px 20px ;
+    height: 70px;
+}
+.menu a:hover{
+    text-decoration: underline;
+    color: #aaa;
+
+}
+.menu ul li{
+    display: block;
+    float: left;
+    line-height: 70px;
+    padding: 0 20px 0 0;
+}
+
+
+
+/******************************************** Sisu */
+.content{
+    
+    padding: 20px 40px ;
+    width: 100%;
+
+}
+
+.left h4{
+    font-size: 50px;
+    font-weight: 400; 
+    padding-bottom: 20px;
+
+}
+.left{
+    
+    width: 40%;
+    display: block;
+    float: left;
+    padding-top: 100px;
+    
+    padding-left: 30px;
+    font-weight: 100; 
+}
+.left a{
+    background-color: #7e5c88;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.right{
+ 
+    display: block;
+    float: right;
+    width: 45%;
+}
+
+.content img{ 
+    display: block;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    border: 20px solid #7e5c88;
+}
+
+
+.pildid{
+    width: 100%;
+    clear: both;
+
+}
+
+.pildid img{
+    width: 24%;
+    border-radius: 0%;
+    
+}
+
+
+
+
+
+/****************************************** Jalus */
+.footer{
+    display: block;
+    width: 100%;
+    clear: both;
+}
