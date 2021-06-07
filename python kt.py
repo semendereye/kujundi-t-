@@ -5,9 +5,8 @@ import pickle
 #it20
 #07.06.21
 #seiklusmang
+#Mängus valid punktid ja võitled gobliniga
 
-#def createplayer
-#karakterid
 
 Ehp = 0
 Eat = 0
@@ -30,7 +29,7 @@ def punktid():
     global health, p, attack, defence
     p = 10
     #otsib kas kasutaja on juba olemas
-    if os.path.isfile(name+".txt")==True:
+    if os.path.isfile(name)==True:
         print("Kasutaja on juba olemas")
         main1()
     #küsib mis oskustele punktid lisada
@@ -69,16 +68,15 @@ def main1():
     option = input(' ')
     if option == "2":
         os.system('clear')
-        with open('savefile', 'wb') as f:
+        with open(name , 'wb') as f:
             pickle.dump(playa, f)
             print ("\nMäng on salvestatut!\n")
             voitlus()
         option = input(' ')
     elif option == "1":
-        if os.path.exists("savefile") == True:
+        if os.path.exists(name) == True:
             os.system('clear')
-            with open('savefile', 'rb') as f:
-                
+            with open(name , 'rb') as f:
                 playa = pickle.load(f)
             print ("Save file on laaditud")
             option = input(' ')
